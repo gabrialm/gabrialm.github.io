@@ -5,7 +5,7 @@
     $(function(){
         $.getJSON('https://min-api.cryptocompare.com/data/price?fsym=ZEC&tsyms=USD',function(data){
             console.log('success');
-            $.each(data.usd,function(i,price){
+            $.each(data,function(i,price){
                 $('ul').append('<li>'+price+'</li>');
             });
         }).error(function(){
