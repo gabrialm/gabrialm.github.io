@@ -2,7 +2,7 @@
 <head>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
-    $(function(){
+    (function() {
         var cc = "https://min-api.cryptocompare.com/data/price?fsym=ZEC&tsyms=USD";
         $.getJSON( cc, function(data){
             console.log('success');
