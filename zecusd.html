@@ -7,7 +7,7 @@
         $.getJSON('cryptocompareAPI',function(data){
             console.log('success');
             $.each(data,function(i,price){
-                $('tr').append('<td>'+price+'</td>');
+                $('ul').append('<li>'+price+'</li>');
             });
         }).error(function(){
             console.log('error');
@@ -16,8 +16,6 @@
 </script>
 </head>
 <body>
-    <table>
-        <tr></tr>
-    </table>
+    <ul></ul>
 </body>
 </html>
